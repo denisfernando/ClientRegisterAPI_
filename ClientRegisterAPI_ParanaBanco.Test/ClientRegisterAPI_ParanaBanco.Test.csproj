@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="Moq" Version="4.18.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClientRegisterAPI_ParanaBanco.Application\ClientRegisterAPI_ParanaBanco.Application.csproj" />
+    <ProjectReference Include="..\ClientRegisterAPI_ParanaBanco.Domain\ClientRegisterAPI_ParanaBanco.Domain.csproj" />
+    <ProjectReference Include="..\ClientRegisterAPI_ParanaBanco.Infra.IoC\ClientRegisterAPI_ParanaBanco.Infra.IoC.csproj" />
+    <ProjectReference Include="..\ClientRegisterAPI_ParanaBanco.Infra\ClientRegisterAPI_ParanaBanco.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

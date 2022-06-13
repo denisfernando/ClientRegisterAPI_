@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegisterAPI_ParanaBanco.Domain", "ClientRegisterAPI_ParanaBanco.Domain\ClientRegisterAPI_ParanaBanco.Domain.csproj", "{48E06F5E-74A0-4E4A-A7A8-BD08D55AA5B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegisterAPI_ParanaBanco.Infra.Data", "ClientRegisterAPI_ParanaBanco.Infra\ClientRegisterAPI_ParanaBanco.Infra.Data.csproj", "{91F7F998-91FD-43E4-9B67-F7C83597AB28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegisterAPI_ParanaBanco.Application", "ClientRegisterAPI_ParanaBanco.Application\ClientRegisterAPI_ParanaBanco.Application.csproj", "{6A901F0B-E138-4845-81D2-A248EE205690}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegisterAPI_ParanaBanco.API", "ClientRegisterAPI_ParanaBanco.API\ClientRegisterAPI_ParanaBanco.API.csproj", "{FC5C5D4D-A90E-45D7-A333-F770E571A776}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegisterAPI_ParanaBanco.Infra.IoC", "ClientRegisterAPI_ParanaBanco.Infra.IoC\ClientRegisterAPI_ParanaBanco.Infra.IoC.csproj", "{467B3E2C-7158-4EDB-A325-98DDCECB1877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegisterAPI_ParanaBanco.Test", "ClientRegisterAPI_ParanaBanco.Test\ClientRegisterAPI_ParanaBanco.Test.csproj", "{A1BD4866-9B84-483C-9578-94DC85BF6FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48E06F5E-74A0-4E4A-A7A8-BD08D55AA5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E06F5E-74A0-4E4A-A7A8-BD08D55AA5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E06F5E-74A0-4E4A-A7A8-BD08D55AA5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E06F5E-74A0-4E4A-A7A8-BD08D55AA5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F7F998-91FD-43E4-9B67-F7C83597AB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F7F998-91FD-43E4-9B67-F7C83597AB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F7F998-91FD-43E4-9B67-F7C83597AB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F7F998-91FD-43E4-9B67-F7C83597AB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A901F0B-E138-4845-81D2-A248EE205690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A901F0B-E138-4845-81D2-A248EE205690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A901F0B-E138-4845-81D2-A248EE205690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A901F0B-E138-4845-81D2-A248EE205690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5C5D4D-A90E-45D7-A333-F770E571A776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5C5D4D-A90E-45D7-A333-F770E571A776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5C5D4D-A90E-45D7-A333-F770E571A776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5C5D4D-A90E-45D7-A333-F770E571A776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467B3E2C-7158-4EDB-A325-98DDCECB1877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467B3E2C-7158-4EDB-A325-98DDCECB1877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467B3E2C-7158-4EDB-A325-98DDCECB1877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467B3E2C-7158-4EDB-A325-98DDCECB1877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BD4866-9B84-483C-9578-94DC85BF6FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BD4866-9B84-483C-9578-94DC85BF6FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BD4866-9B84-483C-9578-94DC85BF6FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BD4866-9B84-483C-9578-94DC85BF6FED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {426BF1C6-0B1A-44A0-8729-4DF4F20E482B}
+	EndGlobalSection
+EndGlobal
