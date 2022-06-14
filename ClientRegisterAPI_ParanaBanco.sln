@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientRegisterAPI_ParanaBan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRegisterAPI_ParanaBanco.Test", "ClientRegisterAPI_ParanaBanco.Test\ClientRegisterAPI_ParanaBanco.Test.csproj", "{A1BD4866-9B84-483C-9578-94DC85BF6FED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{47F53902-B500-4FB1-B97B-DC2B4697DCDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52BFEDC7-A887-4A1C-AE00-0ED050C906F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48E06F5E-74A0-4E4A-A7A8-BD08D55AA5B6} = {47F53902-B500-4FB1-B97B-DC2B4697DCDE}
+		{91F7F998-91FD-43E4-9B67-F7C83597AB28} = {47F53902-B500-4FB1-B97B-DC2B4697DCDE}
+		{6A901F0B-E138-4845-81D2-A248EE205690} = {47F53902-B500-4FB1-B97B-DC2B4697DCDE}
+		{FC5C5D4D-A90E-45D7-A333-F770E571A776} = {47F53902-B500-4FB1-B97B-DC2B4697DCDE}
+		{467B3E2C-7158-4EDB-A325-98DDCECB1877} = {47F53902-B500-4FB1-B97B-DC2B4697DCDE}
+		{A1BD4866-9B84-483C-9578-94DC85BF6FED} = {52BFEDC7-A887-4A1C-AE00-0ED050C906F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {426BF1C6-0B1A-44A0-8729-4DF4F20E482B}

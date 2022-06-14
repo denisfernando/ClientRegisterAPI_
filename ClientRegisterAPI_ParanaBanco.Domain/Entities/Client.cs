@@ -20,7 +20,7 @@ namespace ClientRegisterAPI_ParanaBanco.Domain.Entities
 
         public Client(int id, string fullName, string email)
         {
-            DomainValidationException.When(id < 0, "Cliente não existe");
+            DomainValidationException.When(id < 0, "O Cliente não existe.");
             Validation(fullName, email);
         }
 
@@ -28,6 +28,8 @@ namespace ClientRegisterAPI_ParanaBanco.Domain.Entities
         {
             DomainValidationException.When(String.IsNullOrEmpty(fullName), "Informe o Nome completo do cliente.");
             DomainValidationException.When(String.IsNullOrEmpty(email), "Informe o Email do cliente.");
+            DomainValidationException.When(fullName.Length > 250, "O Nome do cliente não pode conter mais de 250 caracteres.");
+            DomainValidationException.When(email.Length > 250, "O Email do cliente não pode conter mais de 250 caracteres.");
             DomainValidationException.When(!UtilsValidate.IsValidEmail(email), "Informe um email válido.");
 
             FullName = fullName;

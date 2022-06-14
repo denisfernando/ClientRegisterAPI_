@@ -46,8 +46,10 @@ namespace ClientRegisterAPI_ParanaBanco.Application.Services
 
         public async Task<ResultService<ClientDTO>> GetByEmail(string email)
         {
-            if (email == null) email = "";
+            if (String.IsNullOrEmpty(email)) return ResultService.Fail<ClientDTO>("É necessário informar um email para a consulta.");
 
+            if(!UtilsValidate.IsValidEmail(email)) return ResultService.Fail<ClientDTO>("É necessário informar um email válido para a consulta.");
+            
             var client = await _clientRepository.GetByEmail(email);
 
             if (client == null) return ResultService.Fail<ClientDTO>("Email não encontrado.");
@@ -70,6 +72,10 @@ namespace ClientRegisterAPI_ParanaBanco.Application.Services
             if (!validation.IsValid)
                 return ResultService.RequestError("Problemas com a validação dos campos.", validation);
 
+            var emailAreadyRegistered = await _clientRepository.GetByEmail(clientDTO.Email);
+            if(emailAreadyRegistered != null && emailAreadyRegistered.Id != clientDTO.Id)
+                return ResultService.Fail("Já existe um cliente cadastrado com este email.");
+
             var client = await _clientRepository.GetById(clientDTO.Id);
             if (client == null) return ResultService.Fail("Clinte não encontrado.");
 
@@ -85,11 +91,11 @@ namespace ClientRegisterAPI_ParanaBanco.Application.Services
 
             var client = await _clientRepository.GetByEmail(email);
 
-            if (client == null) return ResultService.Fail("Cliente não cadastrado.");
+            if (client == null) return ResultService.Fail("Cliente não encontrado.");
 
             await _clientRepository.Delete(client);
 
-            return ResultService.Ok("Cliente excluído.");
+            return ResultService.Ok("Cliente excluído com sucesso.");
         }
 
       
